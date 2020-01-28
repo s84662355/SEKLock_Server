@@ -24,6 +24,10 @@ LockWeb.port 暂时不需要理会
 
 Auth.secretkey 密钥
 
+lock_type 1  独占锁  2 共享锁
+
+do:Lock|LockName:aaa|lock_type:1|WaitTime:1000|secretkey:111111
+
 do:Lock|LockName:aaa|lock_type:2|WaitTime:1000|secretkey:111111
 
 do:UnLock|LockName:aaa|secretkey:111111
@@ -57,7 +61,7 @@ public class ResponseStatus {
 
 还会加入一个web管理界面 有日志功能 ， 甚至会加入命令行管理
 
-最终目标是可以实现分布式部署，因为单机部署并发量有限
+最终目标是可以实现分布式部署，因为现在是单进程 并发量有限
 
  
 
