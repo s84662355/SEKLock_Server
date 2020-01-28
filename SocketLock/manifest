@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: lib/org.dtools.javaini-v1.1.00.jar lib/fastjson-1.2.56.jar lib/kahadb-5.4.1.jar lib/leveldbjni-all-1.8.jar lib/sqlite-jdbc-3.27.2.1.jar
+Main-Class: socketServer.SocketMain
