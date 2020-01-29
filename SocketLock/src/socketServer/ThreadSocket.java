@@ -43,7 +43,10 @@ public class ThreadSocket extends Thread {
 		try {
 			this.in= this.socket.getInputStream();
 			this.out  = socket.getOutputStream();	
-		} catch (IOException e) {
+			
+			String response = "开始请求";
+		 	out.write(response.getBytes());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

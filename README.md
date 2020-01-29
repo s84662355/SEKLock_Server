@@ -1,4 +1,7 @@
 # SEKLock_Server
+这个工具是因为我觉用redis加锁的话，太麻烦，性能太差了，所以19年初就萌生了想法，做了这个工具出来
+，现在这个工具是基于之前的代码再进行修改，加入了共享锁
+
 
 启动命令
 java -jar SEKLock.jar test.ini.json
